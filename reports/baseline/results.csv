@@ -1,0 +1,61 @@
+﻿sample_id,language,language_name,degradation,field,expected,predicted,predicted_raw,character_error_rate,exact_match
+eng-clean,eng,English,clean,name,DEMO HOLDER,DEMO HOLDER,DEMO HOLDER,0.0,True
+eng-clean,eng,English,clean,document_id,123456789,123456789,123456789,0.0,True
+eng-clean,eng,English,clean,date_of_birth,1990-04-12,1990-04-12,1990-04-12,0.0,True
+eng-clean,eng,English,clean,expiry,2032-05-30,2032-05-30,2032-05-30,0.0,True
+eng-blur,eng,English,blur,name,DEMO HOLDER,DEMO HOLDER,DEMO HOLDER,0.0,True
+eng-blur,eng,English,blur,document_id,123456789,123456789,123456789,0.0,True
+eng-blur,eng,English,blur,date_of_birth,1990-04-12,1990-04-12,1990-04-12,0.0,True
+eng-blur,eng,English,blur,expiry,2032-05-30,2032-05-30,2032-05-30,0.0,True
+eng-rotation,eng,English,rotation,name,DEMO HOLDER,DEMO HOLDER,DEMO HOLDER,0.0,True
+eng-rotation,eng,English,rotation,document_id,123456789,423456789,423456789,0.1111111111111111,False
+eng-rotation,eng,English,rotation,date_of_birth,1990-04-12,4990-04-12,4990-04-12,0.1,False
+eng-rotation,eng,English,rotation,expiry,2032-05-30,2032-05-30,2032-05-30,0.0,True
+eng-low_light,eng,English,low_light,name,DEMO HOLDER,DEMO HOLDER,DEMO HOLDER,0.0,True
+eng-low_light,eng,English,low_light,document_id,123456789,123456789,123456789,0.0,True
+eng-low_light,eng,English,low_light,date_of_birth,1990-04-12,1990-04-12,1990-04-12,0.0,True
+eng-low_light,eng,English,low_light,expiry,2032-05-30,2032-05-30,2032-05-30,0.0,True
+eng-noise,eng,English,noise,name,DEMO HOLDER,DEMO HOLDER,DEMO HOLDER,0.0,True
+eng-noise,eng,English,noise,document_id,123456789,123456789,123456789,0.0,True
+eng-noise,eng,English,noise,date_of_birth,1990-04-12,1990-04-12,1990-04-12,0.0,True
+eng-noise,eng,English,noise,expiry,2032-05-30,2032-05-30,2032-05-30,0.0,True
+heb-clean,heb,Hebrew,clean,name,ישראל ישראלי,ישראל ישראלי,ילארשי לארשי,0.0,True
+heb-clean,heb,Hebrew,clean,document_id,246813579,246813579,246813579,0.0,True
+heb-clean,heb,Hebrew,clean,date_of_birth,1988-11-03,1988-11-03,1988-11-03,0.0,True
+heb-clean,heb,Hebrew,clean,expiry,2031-08-22,2031-08-22,2031-08-22,0.0,True
+heb-blur,heb,Hebrew,blur,name,ישראל ישראלי,ישראל ישראלי,ילארשי לארשי,0.0,True
+heb-blur,heb,Hebrew,blur,document_id,246813579,246813579,246813579,0.0,True
+heb-blur,heb,Hebrew,blur,date_of_birth,1988-11-03,1988-11-03,1988-11-03,0.0,True
+heb-blur,heb,Hebrew,blur,expiry,2031-08-22,2031-08-22,2031-08-22,0.0,True
+heb-rotation,heb,Hebrew,rotation,name,ישראל ישראלי,ישראל ישראל','לארשי לארשי,0.08333333333333333,False
+heb-rotation,heb,Hebrew,rotation,document_id,246813579,246813579,246813579,0.0,True
+heb-rotation,heb,Hebrew,rotation,date_of_birth,1988-11-03,4988-11-03,4988-11-03,0.1,False
+heb-rotation,heb,Hebrew,rotation,expiry,2031-08-22,2031-08-22,2031-08-22,0.0,True
+heb-low_light,heb,Hebrew,low_light,name,ישראל ישראלי,ישראל ישראלי,ילארשי לארשי,0.0,True
+heb-low_light,heb,Hebrew,low_light,document_id,246813579,246813579,246813579,0.0,True
+heb-low_light,heb,Hebrew,low_light,date_of_birth,1988-11-03,1988-11-03,1988-11-03,0.0,True
+heb-low_light,heb,Hebrew,low_light,expiry,2031-08-22,2031-08-22,2031-08-22,0.0,True
+heb-noise,heb,Hebrew,noise,name,ישראל ישראלי,ישראל ישראלי,ילארשי לארשי,0.0,True
+heb-noise,heb,Hebrew,noise,document_id,246813579,246813579,246813579,0.0,True
+heb-noise,heb,Hebrew,noise,date_of_birth,1988-11-03,1988-11-03,1988-11-03,0.0,True
+heb-noise,heb,Hebrew,noise,expiry,2031-08-22,2031-08-22,2031-08-22,0.0,True
+ara-clean,ara,Arabic,clean,name,ليلى حسن,ليلى حسن,نسح ىليل,0.0,True
+ara-clean,ara,Arabic,clean,document_id,975318642,975318642,975318642,0.0,True
+ara-clean,ara,Arabic,clean,date_of_birth,1992-07-16,1992-07-6,1992-07-6,0.1,False
+ara-clean,ara,Arabic,clean,expiry,2033-02-14,2033-02-14,2033-02-14,0.0,True
+ara-blur,ara,Arabic,blur,name,ليلى حسن,ليلى حسن,نسح ىليل,0.0,True
+ara-blur,ara,Arabic,blur,document_id,975318642,975318642,975318642,0.0,True
+ara-blur,ara,Arabic,blur,date_of_birth,1992-07-16,1992-07-6,1992-07-6,0.1,False
+ara-blur,ara,Arabic,blur,expiry,2033-02-14,2033-02-4,2033-02-4,0.1,False
+ara-rotation,ara,Arabic,rotation,name,ليلى حسن,ليلى حسن,نسح ىليل,0.0,True
+ara-rotation,ara,Arabic,rotation,document_id,975318642,975318642,975318642,0.0,True
+ara-rotation,ara,Arabic,rotation,date_of_birth,1992-07-16,1992-07-6,1992-07-6,0.1,False
+ara-rotation,ara,Arabic,rotation,expiry,2033-02-14,2033-02-14,2033-02-14,0.0,True
+ara-low_light,ara,Arabic,low_light,name,ليلى حسن,ليلى حسن,نسح ىليل,0.0,True
+ara-low_light,ara,Arabic,low_light,document_id,975318642,975318642,975318642,0.0,True
+ara-low_light,ara,Arabic,low_light,date_of_birth,1992-07-16,1992-07-16,1992-07-16,0.0,True
+ara-low_light,ara,Arabic,low_light,expiry,2033-02-14,2033-02-14,2033-02-14,0.0,True
+ara-noise,ara,Arabic,noise,name,ليلى حسن,ليلى حسن,نسح ىليل,0.0,True
+ara-noise,ara,Arabic,noise,document_id,975318642,975318642,975318642,0.0,True
+ara-noise,ara,Arabic,noise,date_of_birth,1992-07-16,1992-07-6,1992-07-6,0.1,False
+ara-noise,ara,Arabic,noise,expiry,2033-02-14,2033-02-14,2033-02-14,0.0,True

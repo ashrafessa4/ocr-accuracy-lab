@@ -1,0 +1,803 @@
+{
+  "metadata": {
+    "created_at": "2026-10-03T13:50:19.634694+00:00",
+    "engine": "Tesseract",
+    "engine_version": "5.5.0.20241111",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "data_license": "CC0-1.0",
+    "sample_count": 15
+  },
+  "overall": {
+    "character_error_rate": 0.014907407407407407,
+    "field_accuracy": 0.85,
+    "field_count": 60
+  },
+  "by_language": {
+    "Arabic": {
+      "character_error_rate": 0.025,
+      "field_accuracy": 0.75,
+      "field_count": 20
+    },
+    "English": {
+      "character_error_rate": 0.010555555555555556,
+      "field_accuracy": 0.9,
+      "field_count": 20
+    },
+    "Hebrew": {
+      "character_error_rate": 0.009166666666666667,
+      "field_accuracy": 0.9,
+      "field_count": 20
+    }
+  },
+  "by_degradation": {
+    "blur": {
+      "character_error_rate": 0.016666666666666666,
+      "field_accuracy": 0.8333333333333334,
+      "field_count": 12
+    },
+    "clean": {
+      "character_error_rate": 0.008333333333333333,
+      "field_accuracy": 0.9166666666666666,
+      "field_count": 12
+    },
+    "low_light": {
+      "character_error_rate": 0.0,
+      "field_accuracy": 1.0,
+      "field_count": 12
+    },
+    "noise": {
+      "character_error_rate": 0.008333333333333333,
+      "field_accuracy": 0.9166666666666666,
+      "field_count": 12
+    },
+    "rotation": {
+      "character_error_rate": 0.04120370370370371,
+      "field_accuracy": 0.5833333333333334,
+      "field_count": 12
+    }
+  },
+  "by_field": {
+    "date_of_birth": {
+      "character_error_rate": 0.04000000000000001,
+      "field_accuracy": 0.6,
+      "field_count": 15
+    },
+    "document_id": {
+      "character_error_rate": 0.007407407407407407,
+      "field_accuracy": 0.9333333333333333,
+      "field_count": 15
+    },
+    "expiry": {
+      "character_error_rate": 0.006666666666666667,
+      "field_accuracy": 0.9333333333333333,
+      "field_count": 15
+    },
+    "name": {
+      "character_error_rate": 0.005555555555555555,
+      "field_accuracy": 0.9333333333333333,
+      "field_count": 15
+    }
+  },
+  "results": [
+    {
+      "sample_id": "eng-clean",
+      "language": "eng",
+      "language_name": "English",
+      "degradation": "clean",
+      "field": "name",
+      "expected": "DEMO HOLDER",
+      "predicted": "DEMO HOLDER",
+      "predicted_raw": "DEMO HOLDER",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "eng-clean",
+      "language": "eng",
+      "language_name": "English",
+      "degradation": "clean",
+      "field": "document_id",
+      "expected": "123456789",
+      "predicted": "123456789",
+      "predicted_raw": "123456789",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "eng-clean",
+      "language": "eng",
+      "language_name": "English",
+      "degradation": "clean",
+      "field": "date_of_birth",
+      "expected": "1990-04-12",
+      "predicted": "1990-04-12",
+      "predicted_raw": "1990-04-12",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "eng-clean",
+      "language": "eng",
+      "language_name": "English",
+      "degradation": "clean",
+      "field": "expiry",
+      "expected": "2032-05-30",
+      "predicted": "2032-05-30",
+      "predicted_raw": "2032-05-30",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "eng-blur",
+      "language": "eng",
+      "language_name": "English",
+      "degradation": "blur",
+      "field": "name",
+      "expected": "DEMO HOLDER",
+      "predicted": "DEMO HOLDER",
+      "predicted_raw": "DEMO HOLDER",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "eng-blur",
+      "language": "eng",
+      "language_name": "English",
+      "degradation": "blur",
+      "field": "document_id",
+      "expected": "123456789",
+      "predicted": "123456789",
+      "predicted_raw": "123456789",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "eng-blur",
+      "language": "eng",
+      "language_name": "English",
+      "degradation": "blur",
+      "field": "date_of_birth",
+      "expected": "1990-04-12",
+      "predicted": "1990-04-12",
+      "predicted_raw": "1990-04-12",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "eng-blur",
+      "language": "eng",
+      "language_name": "English",
+      "degradation": "blur",
+      "field": "expiry",
+      "expected": "2032-05-30",
+      "predicted": "2032-05-30",
+      "predicted_raw": "2032-05-30",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "eng-rotation",
+      "language": "eng",
+      "language_name": "English",
+      "degradation": "rotation",
+      "field": "name",
+      "expected": "DEMO HOLDER",
+      "predicted": "DEMO HOLDER",
+      "predicted_raw": "DEMO HOLDER",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "eng-rotation",
+      "language": "eng",
+      "language_name": "English",
+      "degradation": "rotation",
+      "field": "document_id",
+      "expected": "123456789",
+      "predicted": "423456789",
+      "predicted_raw": "423456789",
+      "character_error_rate": 0.1111111111111111,
+      "exact_match": false
+    },
+    {
+      "sample_id": "eng-rotation",
+      "language": "eng",
+      "language_name": "English",
+      "degradation": "rotation",
+      "field": "date_of_birth",
+      "expected": "1990-04-12",
+      "predicted": "4990-04-12",
+      "predicted_raw": "4990-04-12",
+      "character_error_rate": 0.1,
+      "exact_match": false
+    },
+    {
+      "sample_id": "eng-rotation",
+      "language": "eng",
+      "language_name": "English",
+      "degradation": "rotation",
+      "field": "expiry",
+      "expected": "2032-05-30",
+      "predicted": "2032-05-30",
+      "predicted_raw": "2032-05-30",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "eng-low_light",
+      "language": "eng",
+      "language_name": "English",
+      "degradation": "low_light",
+      "field": "name",
+      "expected": "DEMO HOLDER",
+      "predicted": "DEMO HOLDER",
+      "predicted_raw": "DEMO HOLDER",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "eng-low_light",
+      "language": "eng",
+      "language_name": "English",
+      "degradation": "low_light",
+      "field": "document_id",
+      "expected": "123456789",
+      "predicted": "123456789",
+      "predicted_raw": "123456789",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "eng-low_light",
+      "language": "eng",
+      "language_name": "English",
+      "degradation": "low_light",
+      "field": "date_of_birth",
+      "expected": "1990-04-12",
+      "predicted": "1990-04-12",
+      "predicted_raw": "1990-04-12",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "eng-low_light",
+      "language": "eng",
+      "language_name": "English",
+      "degradation": "low_light",
+      "field": "expiry",
+      "expected": "2032-05-30",
+      "predicted": "2032-05-30",
+      "predicted_raw": "2032-05-30",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "eng-noise",
+      "language": "eng",
+      "language_name": "English",
+      "degradation": "noise",
+      "field": "name",
+      "expected": "DEMO HOLDER",
+      "predicted": "DEMO HOLDER",
+      "predicted_raw": "DEMO HOLDER",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "eng-noise",
+      "language": "eng",
+      "language_name": "English",
+      "degradation": "noise",
+      "field": "document_id",
+      "expected": "123456789",
+      "predicted": "123456789",
+      "predicted_raw": "123456789",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "eng-noise",
+      "language": "eng",
+      "language_name": "English",
+      "degradation": "noise",
+      "field": "date_of_birth",
+      "expected": "1990-04-12",
+      "predicted": "1990-04-12",
+      "predicted_raw": "1990-04-12",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "eng-noise",
+      "language": "eng",
+      "language_name": "English",
+      "degradation": "noise",
+      "field": "expiry",
+      "expected": "2032-05-30",
+      "predicted": "2032-05-30",
+      "predicted_raw": "2032-05-30",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "heb-clean",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "degradation": "clean",
+      "field": "name",
+      "expected": "ישראל ישראלי",
+      "predicted": "ישראל ישראלי",
+      "predicted_raw": "ילארשי לארשי",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "heb-clean",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "degradation": "clean",
+      "field": "document_id",
+      "expected": "246813579",
+      "predicted": "246813579",
+      "predicted_raw": "246813579",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "heb-clean",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "degradation": "clean",
+      "field": "date_of_birth",
+      "expected": "1988-11-03",
+      "predicted": "1988-11-03",
+      "predicted_raw": "1988-11-03",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "heb-clean",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "degradation": "clean",
+      "field": "expiry",
+      "expected": "2031-08-22",
+      "predicted": "2031-08-22",
+      "predicted_raw": "2031-08-22",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "heb-blur",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "degradation": "blur",
+      "field": "name",
+      "expected": "ישראל ישראלי",
+      "predicted": "ישראל ישראלי",
+      "predicted_raw": "ילארשי לארשי",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "heb-blur",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "degradation": "blur",
+      "field": "document_id",
+      "expected": "246813579",
+      "predicted": "246813579",
+      "predicted_raw": "246813579",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "heb-blur",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "degradation": "blur",
+      "field": "date_of_birth",
+      "expected": "1988-11-03",
+      "predicted": "1988-11-03",
+      "predicted_raw": "1988-11-03",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "heb-blur",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "degradation": "blur",
+      "field": "expiry",
+      "expected": "2031-08-22",
+      "predicted": "2031-08-22",
+      "predicted_raw": "2031-08-22",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "heb-rotation",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "degradation": "rotation",
+      "field": "name",
+      "expected": "ישראל ישראלי",
+      "predicted": "ישראל ישראל'",
+      "predicted_raw": "'לארשי לארשי",
+      "character_error_rate": 0.08333333333333333,
+      "exact_match": false
+    },
+    {
+      "sample_id": "heb-rotation",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "degradation": "rotation",
+      "field": "document_id",
+      "expected": "246813579",
+      "predicted": "246813579",
+      "predicted_raw": "246813579",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "heb-rotation",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "degradation": "rotation",
+      "field": "date_of_birth",
+      "expected": "1988-11-03",
+      "predicted": "4988-11-03",
+      "predicted_raw": "4988-11-03",
+      "character_error_rate": 0.1,
+      "exact_match": false
+    },
+    {
+      "sample_id": "heb-rotation",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "degradation": "rotation",
+      "field": "expiry",
+      "expected": "2031-08-22",
+      "predicted": "2031-08-22",
+      "predicted_raw": "2031-08-22",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "heb-low_light",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "degradation": "low_light",
+      "field": "name",
+      "expected": "ישראל ישראלי",
+      "predicted": "ישראל ישראלי",
+      "predicted_raw": "ילארשי לארשי",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "heb-low_light",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "degradation": "low_light",
+      "field": "document_id",
+      "expected": "246813579",
+      "predicted": "246813579",
+      "predicted_raw": "246813579",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "heb-low_light",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "degradation": "low_light",
+      "field": "date_of_birth",
+      "expected": "1988-11-03",
+      "predicted": "1988-11-03",
+      "predicted_raw": "1988-11-03",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "heb-low_light",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "degradation": "low_light",
+      "field": "expiry",
+      "expected": "2031-08-22",
+      "predicted": "2031-08-22",
+      "predicted_raw": "2031-08-22",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "heb-noise",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "degradation": "noise",
+      "field": "name",
+      "expected": "ישראל ישראלי",
+      "predicted": "ישראל ישראלי",
+      "predicted_raw": "ילארשי לארשי",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "heb-noise",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "degradation": "noise",
+      "field": "document_id",
+      "expected": "246813579",
+      "predicted": "246813579",
+      "predicted_raw": "246813579",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "heb-noise",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "degradation": "noise",
+      "field": "date_of_birth",
+      "expected": "1988-11-03",
+      "predicted": "1988-11-03",
+      "predicted_raw": "1988-11-03",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "heb-noise",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "degradation": "noise",
+      "field": "expiry",
+      "expected": "2031-08-22",
+      "predicted": "2031-08-22",
+      "predicted_raw": "2031-08-22",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "ara-clean",
+      "language": "ara",
+      "language_name": "Arabic",
+      "degradation": "clean",
+      "field": "name",
+      "expected": "ليلى حسن",
+      "predicted": "ليلى حسن",
+      "predicted_raw": "نسح ىليل",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "ara-clean",
+      "language": "ara",
+      "language_name": "Arabic",
+      "degradation": "clean",
+      "field": "document_id",
+      "expected": "975318642",
+      "predicted": "975318642",
+      "predicted_raw": "975318642",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "ara-clean",
+      "language": "ara",
+      "language_name": "Arabic",
+      "degradation": "clean",
+      "field": "date_of_birth",
+      "expected": "1992-07-16",
+      "predicted": "1992-07-6",
+      "predicted_raw": "1992-07-6",
+      "character_error_rate": 0.1,
+      "exact_match": false
+    },
+    {
+      "sample_id": "ara-clean",
+      "language": "ara",
+      "language_name": "Arabic",
+      "degradation": "clean",
+      "field": "expiry",
+      "expected": "2033-02-14",
+      "predicted": "2033-02-14",
+      "predicted_raw": "2033-02-14",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "ara-blur",
+      "language": "ara",
+      "language_name": "Arabic",
+      "degradation": "blur",
+      "field": "name",
+      "expected": "ليلى حسن",
+      "predicted": "ليلى حسن",
+      "predicted_raw": "نسح ىليل",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "ara-blur",
+      "language": "ara",
+      "language_name": "Arabic",
+      "degradation": "blur",
+      "field": "document_id",
+      "expected": "975318642",
+      "predicted": "975318642",
+      "predicted_raw": "975318642",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "ara-blur",
+      "language": "ara",
+      "language_name": "Arabic",
+      "degradation": "blur",
+      "field": "date_of_birth",
+      "expected": "1992-07-16",
+      "predicted": "1992-07-6",
+      "predicted_raw": "1992-07-6",
+      "character_error_rate": 0.1,
+      "exact_match": false
+    },
+    {
+      "sample_id": "ara-blur",
+      "language": "ara",
+      "language_name": "Arabic",
+      "degradation": "blur",
+      "field": "expiry",
+      "expected": "2033-02-14",
+      "predicted": "2033-02-4",
+      "predicted_raw": "2033-02-4",
+      "character_error_rate": 0.1,
+      "exact_match": false
+    },
+    {
+      "sample_id": "ara-rotation",
+      "language": "ara",
+      "language_name": "Arabic",
+      "degradation": "rotation",
+      "field": "name",
+      "expected": "ليلى حسن",
+      "predicted": "ليلى حسن",
+      "predicted_raw": "نسح ىليل",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "ara-rotation",
+      "language": "ara",
+      "language_name": "Arabic",
+      "degradation": "rotation",
+      "field": "document_id",
+      "expected": "975318642",
+      "predicted": "975318642",
+      "predicted_raw": "975318642",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "ara-rotation",
+      "language": "ara",
+      "language_name": "Arabic",
+      "degradation": "rotation",
+      "field": "date_of_birth",
+      "expected": "1992-07-16",
+      "predicted": "1992-07-6",
+      "predicted_raw": "1992-07-6",
+      "character_error_rate": 0.1,
+      "exact_match": false
+    },
+    {
+      "sample_id": "ara-rotation",
+      "language": "ara",
+      "language_name": "Arabic",
+      "degradation": "rotation",
+      "field": "expiry",
+      "expected": "2033-02-14",
+      "predicted": "2033-02-14",
+      "predicted_raw": "2033-02-14",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "ara-low_light",
+      "language": "ara",
+      "language_name": "Arabic",
+      "degradation": "low_light",
+      "field": "name",
+      "expected": "ليلى حسن",
+      "predicted": "ليلى حسن",
+      "predicted_raw": "نسح ىليل",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "ara-low_light",
+      "language": "ara",
+      "language_name": "Arabic",
+      "degradation": "low_light",
+      "field": "document_id",
+      "expected": "975318642",
+      "predicted": "975318642",
+      "predicted_raw": "975318642",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "ara-low_light",
+      "language": "ara",
+      "language_name": "Arabic",
+      "degradation": "low_light",
+      "field": "date_of_birth",
+      "expected": "1992-07-16",
+      "predicted": "1992-07-16",
+      "predicted_raw": "1992-07-16",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "ara-low_light",
+      "language": "ara",
+      "language_name": "Arabic",
+      "degradation": "low_light",
+      "field": "expiry",
+      "expected": "2033-02-14",
+      "predicted": "2033-02-14",
+      "predicted_raw": "2033-02-14",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "ara-noise",
+      "language": "ara",
+      "language_name": "Arabic",
+      "degradation": "noise",
+      "field": "name",
+      "expected": "ليلى حسن",
+      "predicted": "ليلى حسن",
+      "predicted_raw": "نسح ىليل",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "ara-noise",
+      "language": "ara",
+      "language_name": "Arabic",
+      "degradation": "noise",
+      "field": "document_id",
+      "expected": "975318642",
+      "predicted": "975318642",
+      "predicted_raw": "975318642",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    },
+    {
+      "sample_id": "ara-noise",
+      "language": "ara",
+      "language_name": "Arabic",
+      "degradation": "noise",
+      "field": "date_of_birth",
+      "expected": "1992-07-16",
+      "predicted": "1992-07-6",
+      "predicted_raw": "1992-07-6",
+      "character_error_rate": 0.1,
+      "exact_match": false
+    },
+    {
+      "sample_id": "ara-noise",
+      "language": "ara",
+      "language_name": "Arabic",
+      "degradation": "noise",
+      "field": "expiry",
+      "expected": "2033-02-14",
+      "predicted": "2033-02-14",
+      "predicted_raw": "2033-02-14",
+      "character_error_rate": 0.0,
+      "exact_match": true
+    }
+  ]
+}
