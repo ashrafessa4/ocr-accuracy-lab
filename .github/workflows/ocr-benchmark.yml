@@ -1,0 +1,67 @@
+name: OCR benchmark
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    name: Python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install package
+        run: python -m pip install --upgrade pip && python -m pip install -e ".[dev]"
+      - name: Lint
+        run: ruff check .
+      - name: Test
+        run: pytest
+
+  benchmark:
+    name: Multilingual benchmark
+    needs: quality
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install OCR runtime and fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes tesseract-ocr tesseract-ocr-eng tesseract-ocr-heb tesseract-ocr-ara fonts-noto-core
+      - name: Install package
+        run: python -m pip install --upgrade pip && python -m pip install .
+      - name: Generate synthetic dataset
+        run: ocrbench generate
+      - name: Evaluate OCR accuracy
+        run: ocrbench evaluate --output-dir reports/current
+      - name: Check against committed baseline
+        run: |
+          ocrbench compare reports/baseline/results.json reports/current/results.json \
+            --max-cer-increase 0.08 \
+            --max-accuracy-drop 0.12 \
+            --output reports/current/regression.md
+      - name: Publish benchmark evidence
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: ocr-benchmark-report
+          path: reports/current
+          retention-days: 30
