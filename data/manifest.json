@@ -1,0 +1,397 @@
+{
+  "license": "CC0-1.0",
+  "provenance": "Programmatically generated synthetic identities; no real people or documents.",
+  "sample_count": 15,
+  "samples": [
+    {
+      "sample_id": "eng-clean",
+      "language": "eng",
+      "language_name": "English",
+      "direction": "ltr",
+      "degradation": "clean",
+      "card_image": "synthetic/eng-clean/card.png",
+      "fields": {
+        "name": {
+          "expected": "DEMO HOLDER",
+          "image": "synthetic/eng-clean/name.png"
+        },
+        "document_id": {
+          "expected": "123456789",
+          "image": "synthetic/eng-clean/document_id.png"
+        },
+        "date_of_birth": {
+          "expected": "1990-04-12",
+          "image": "synthetic/eng-clean/date_of_birth.png"
+        },
+        "expiry": {
+          "expected": "2032-05-30",
+          "image": "synthetic/eng-clean/expiry.png"
+        }
+      }
+    },
+    {
+      "sample_id": "eng-blur",
+      "language": "eng",
+      "language_name": "English",
+      "direction": "ltr",
+      "degradation": "blur",
+      "card_image": "synthetic/eng-blur/card.png",
+      "fields": {
+        "name": {
+          "expected": "DEMO HOLDER",
+          "image": "synthetic/eng-blur/name.png"
+        },
+        "document_id": {
+          "expected": "123456789",
+          "image": "synthetic/eng-blur/document_id.png"
+        },
+        "date_of_birth": {
+          "expected": "1990-04-12",
+          "image": "synthetic/eng-blur/date_of_birth.png"
+        },
+        "expiry": {
+          "expected": "2032-05-30",
+          "image": "synthetic/eng-blur/expiry.png"
+        }
+      }
+    },
+    {
+      "sample_id": "eng-rotation",
+      "language": "eng",
+      "language_name": "English",
+      "direction": "ltr",
+      "degradation": "rotation",
+      "card_image": "synthetic/eng-rotation/card.png",
+      "fields": {
+        "name": {
+          "expected": "DEMO HOLDER",
+          "image": "synthetic/eng-rotation/name.png"
+        },
+        "document_id": {
+          "expected": "123456789",
+          "image": "synthetic/eng-rotation/document_id.png"
+        },
+        "date_of_birth": {
+          "expected": "1990-04-12",
+          "image": "synthetic/eng-rotation/date_of_birth.png"
+        },
+        "expiry": {
+          "expected": "2032-05-30",
+          "image": "synthetic/eng-rotation/expiry.png"
+        }
+      }
+    },
+    {
+      "sample_id": "eng-low_light",
+      "language": "eng",
+      "language_name": "English",
+      "direction": "ltr",
+      "degradation": "low_light",
+      "card_image": "synthetic/eng-low_light/card.png",
+      "fields": {
+        "name": {
+          "expected": "DEMO HOLDER",
+          "image": "synthetic/eng-low_light/name.png"
+        },
+        "document_id": {
+          "expected": "123456789",
+          "image": "synthetic/eng-low_light/document_id.png"
+        },
+        "date_of_birth": {
+          "expected": "1990-04-12",
+          "image": "synthetic/eng-low_light/date_of_birth.png"
+        },
+        "expiry": {
+          "expected": "2032-05-30",
+          "image": "synthetic/eng-low_light/expiry.png"
+        }
+      }
+    },
+    {
+      "sample_id": "eng-noise",
+      "language": "eng",
+      "language_name": "English",
+      "direction": "ltr",
+      "degradation": "noise",
+      "card_image": "synthetic/eng-noise/card.png",
+      "fields": {
+        "name": {
+          "expected": "DEMO HOLDER",
+          "image": "synthetic/eng-noise/name.png"
+        },
+        "document_id": {
+          "expected": "123456789",
+          "image": "synthetic/eng-noise/document_id.png"
+        },
+        "date_of_birth": {
+          "expected": "1990-04-12",
+          "image": "synthetic/eng-noise/date_of_birth.png"
+        },
+        "expiry": {
+          "expected": "2032-05-30",
+          "image": "synthetic/eng-noise/expiry.png"
+        }
+      }
+    },
+    {
+      "sample_id": "heb-clean",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "direction": "rtl",
+      "degradation": "clean",
+      "card_image": "synthetic/heb-clean/card.png",
+      "fields": {
+        "name": {
+          "expected": "ישראל ישראלי",
+          "image": "synthetic/heb-clean/name.png"
+        },
+        "document_id": {
+          "expected": "246813579",
+          "image": "synthetic/heb-clean/document_id.png"
+        },
+        "date_of_birth": {
+          "expected": "1988-11-03",
+          "image": "synthetic/heb-clean/date_of_birth.png"
+        },
+        "expiry": {
+          "expected": "2031-08-22",
+          "image": "synthetic/heb-clean/expiry.png"
+        }
+      }
+    },
+    {
+      "sample_id": "heb-blur",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "direction": "rtl",
+      "degradation": "blur",
+      "card_image": "synthetic/heb-blur/card.png",
+      "fields": {
+        "name": {
+          "expected": "ישראל ישראלי",
+          "image": "synthetic/heb-blur/name.png"
+        },
+        "document_id": {
+          "expected": "246813579",
+          "image": "synthetic/heb-blur/document_id.png"
+        },
+        "date_of_birth": {
+          "expected": "1988-11-03",
+          "image": "synthetic/heb-blur/date_of_birth.png"
+        },
+        "expiry": {
+          "expected": "2031-08-22",
+          "image": "synthetic/heb-blur/expiry.png"
+        }
+      }
+    },
+    {
+      "sample_id": "heb-rotation",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "direction": "rtl",
+      "degradation": "rotation",
+      "card_image": "synthetic/heb-rotation/card.png",
+      "fields": {
+        "name": {
+          "expected": "ישראל ישראלי",
+          "image": "synthetic/heb-rotation/name.png"
+        },
+        "document_id": {
+          "expected": "246813579",
+          "image": "synthetic/heb-rotation/document_id.png"
+        },
+        "date_of_birth": {
+          "expected": "1988-11-03",
+          "image": "synthetic/heb-rotation/date_of_birth.png"
+        },
+        "expiry": {
+          "expected": "2031-08-22",
+          "image": "synthetic/heb-rotation/expiry.png"
+        }
+      }
+    },
+    {
+      "sample_id": "heb-low_light",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "direction": "rtl",
+      "degradation": "low_light",
+      "card_image": "synthetic/heb-low_light/card.png",
+      "fields": {
+        "name": {
+          "expected": "ישראל ישראלי",
+          "image": "synthetic/heb-low_light/name.png"
+        },
+        "document_id": {
+          "expected": "246813579",
+          "image": "synthetic/heb-low_light/document_id.png"
+        },
+        "date_of_birth": {
+          "expected": "1988-11-03",
+          "image": "synthetic/heb-low_light/date_of_birth.png"
+        },
+        "expiry": {
+          "expected": "2031-08-22",
+          "image": "synthetic/heb-low_light/expiry.png"
+        }
+      }
+    },
+    {
+      "sample_id": "heb-noise",
+      "language": "heb",
+      "language_name": "Hebrew",
+      "direction": "rtl",
+      "degradation": "noise",
+      "card_image": "synthetic/heb-noise/card.png",
+      "fields": {
+        "name": {
+          "expected": "ישראל ישראלי",
+          "image": "synthetic/heb-noise/name.png"
+        },
+        "document_id": {
+          "expected": "246813579",
+          "image": "synthetic/heb-noise/document_id.png"
+        },
+        "date_of_birth": {
+          "expected": "1988-11-03",
+          "image": "synthetic/heb-noise/date_of_birth.png"
+        },
+        "expiry": {
+          "expected": "2031-08-22",
+          "image": "synthetic/heb-noise/expiry.png"
+        }
+      }
+    },
+    {
+      "sample_id": "ara-clean",
+      "language": "ara",
+      "language_name": "Arabic",
+      "direction": "rtl",
+      "degradation": "clean",
+      "card_image": "synthetic/ara-clean/card.png",
+      "fields": {
+        "name": {
+          "expected": "ليلى حسن",
+          "image": "synthetic/ara-clean/name.png"
+        },
+        "document_id": {
+          "expected": "975318642",
+          "image": "synthetic/ara-clean/document_id.png"
+        },
+        "date_of_birth": {
+          "expected": "1992-07-16",
+          "image": "synthetic/ara-clean/date_of_birth.png"
+        },
+        "expiry": {
+          "expected": "2033-02-14",
+          "image": "synthetic/ara-clean/expiry.png"
+        }
+      }
+    },
+    {
+      "sample_id": "ara-blur",
+      "language": "ara",
+      "language_name": "Arabic",
+      "direction": "rtl",
+      "degradation": "blur",
+      "card_image": "synthetic/ara-blur/card.png",
+      "fields": {
+        "name": {
+          "expected": "ليلى حسن",
+          "image": "synthetic/ara-blur/name.png"
+        },
+        "document_id": {
+          "expected": "975318642",
+          "image": "synthetic/ara-blur/document_id.png"
+        },
+        "date_of_birth": {
+          "expected": "1992-07-16",
+          "image": "synthetic/ara-blur/date_of_birth.png"
+        },
+        "expiry": {
+          "expected": "2033-02-14",
+          "image": "synthetic/ara-blur/expiry.png"
+        }
+      }
+    },
+    {
+      "sample_id": "ara-rotation",
+      "language": "ara",
+      "language_name": "Arabic",
+      "direction": "rtl",
+      "degradation": "rotation",
+      "card_image": "synthetic/ara-rotation/card.png",
+      "fields": {
+        "name": {
+          "expected": "ليلى حسن",
+          "image": "synthetic/ara-rotation/name.png"
+        },
+        "document_id": {
+          "expected": "975318642",
+          "image": "synthetic/ara-rotation/document_id.png"
+        },
+        "date_of_birth": {
+          "expected": "1992-07-16",
+          "image": "synthetic/ara-rotation/date_of_birth.png"
+        },
+        "expiry": {
+          "expected": "2033-02-14",
+          "image": "synthetic/ara-rotation/expiry.png"
+        }
+      }
+    },
+    {
+      "sample_id": "ara-low_light",
+      "language": "ara",
+      "language_name": "Arabic",
+      "direction": "rtl",
+      "degradation": "low_light",
+      "card_image": "synthetic/ara-low_light/card.png",
+      "fields": {
+        "name": {
+          "expected": "ليلى حسن",
+          "image": "synthetic/ara-low_light/name.png"
+        },
+        "document_id": {
+          "expected": "975318642",
+          "image": "synthetic/ara-low_light/document_id.png"
+        },
+        "date_of_birth": {
+          "expected": "1992-07-16",
+          "image": "synthetic/ara-low_light/date_of_birth.png"
+        },
+        "expiry": {
+          "expected": "2033-02-14",
+          "image": "synthetic/ara-low_light/expiry.png"
+        }
+      }
+    },
+    {
+      "sample_id": "ara-noise",
+      "language": "ara",
+      "language_name": "Arabic",
+      "direction": "rtl",
+      "degradation": "noise",
+      "card_image": "synthetic/ara-noise/card.png",
+      "fields": {
+        "name": {
+          "expected": "ليلى حسن",
+          "image": "synthetic/ara-noise/name.png"
+        },
+        "document_id": {
+          "expected": "975318642",
+          "image": "synthetic/ara-noise/document_id.png"
+        },
+        "date_of_birth": {
+          "expected": "1992-07-16",
+          "image": "synthetic/ara-noise/date_of_birth.png"
+        },
+        "expiry": {
+          "expected": "2033-02-14",
+          "image": "synthetic/ara-noise/expiry.png"
+        }
+      }
+    }
+  ]
+}
