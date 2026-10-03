@@ -1,8 +1,9 @@
 # OCR Accuracy & Regression Lab
 
-A synthetic-only test harness for measuring Tesseract OCR quality on identity-style images in English, Hebrew, and Arabic. It reports character error rate (CER), exact field accuracy, robustness under image degradation, and regressions between configurations.
+[![OCR benchmark](https://github.com/ashrafessa4/ocr-accuracy-lab/actions/workflows/ocr-benchmark.yml/badge.svg)](https://github.com/ashrafessa4/ocr-accuracy-lab/actions/workflows/ocr-benchmark.yml)
+[![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12%20%7C%203.13-3776AB)](https://www.python.org/)
 
-> Status badge and repository links are added when this project is connected to GitHub.
+A synthetic-only test harness for measuring Tesseract OCR quality on identity-style images in English, Hebrew, and Arabic. It reports character error rate (CER), exact field accuracy, robustness under image degradation, and regressions between configurations.
 
 ![OCR degradation results](reports/baseline/accuracy-chart.png)
 

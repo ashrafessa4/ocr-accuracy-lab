@@ -9,7 +9,7 @@ description = "Synthetic multilingual OCR accuracy and regression testing toolki
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
-authors = [{ name = "Portfolio project" }]
+authors = [{ name = "Ashraf Essa" }]
 dependencies = [
   "arabic-reshaper>=3.0,<4",
   "matplotlib>=3.9,<4",
