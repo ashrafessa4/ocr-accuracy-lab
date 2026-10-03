@@ -41,15 +41,15 @@ heb-noise,heb,Hebrew,noise,date_of_birth,1988-11-03,1988-11-03,1988-11-03,0.0,Tr
 heb-noise,heb,Hebrew,noise,expiry,2031-08-22,2031-08-22,2031-08-22,0.0,True
 ara-clean,ara,Arabic,clean,name,ليلى حسن,ليلى حسن,نسح ىليل,0.0,True
 ara-clean,ara,Arabic,clean,document_id,975318642,975318642,975318642,0.0,True
-ara-clean,ara,Arabic,clean,date_of_birth,1992-07-16,1992-07-6,1992-07-6,0.1,False
+ara-clean,ara,Arabic,clean,date_of_birth,1992-07-16,1992-07-16,1992-07-16,0.0,True
 ara-clean,ara,Arabic,clean,expiry,2033-02-14,2033-02-14,2033-02-14,0.0,True
 ara-blur,ara,Arabic,blur,name,ليلى حسن,ليلى حسن,نسح ىليل,0.0,True
 ara-blur,ara,Arabic,blur,document_id,975318642,975318642,975318642,0.0,True
-ara-blur,ara,Arabic,blur,date_of_birth,1992-07-16,1992-07-6,1992-07-6,0.1,False
-ara-blur,ara,Arabic,blur,expiry,2033-02-14,2033-02-4,2033-02-4,0.1,False
+ara-blur,ara,Arabic,blur,date_of_birth,1992-07-16,1992-07-16,1992-07-16,0.0,True
+ara-blur,ara,Arabic,blur,expiry,2033-02-14,2033-02-14,2033-02-14,0.0,True
 ara-rotation,ara,Arabic,rotation,name,ليلى حسن,ليلى حسن,نسح ىليل,0.0,True
 ara-rotation,ara,Arabic,rotation,document_id,975318642,975318642,975318642,0.0,True
-ara-rotation,ara,Arabic,rotation,date_of_birth,1992-07-16,1992-07-6,1992-07-6,0.1,False
+ara-rotation,ara,Arabic,rotation,date_of_birth,1992-07-16,4992-07-16,4992-07-16,0.1,False
 ara-rotation,ara,Arabic,rotation,expiry,2033-02-14,2033-02-14,2033-02-14,0.0,True
 ara-low_light,ara,Arabic,low_light,name,ليلى حسن,ليلى حسن,نسح ىليل,0.0,True
 ara-low_light,ara,Arabic,low_light,document_id,975318642,975318642,975318642,0.0,True
@@ -57,5 +57,5 @@ ara-low_light,ara,Arabic,low_light,date_of_birth,1992-07-16,1992-07-16,1992-07-1
 ara-low_light,ara,Arabic,low_light,expiry,2033-02-14,2033-02-14,2033-02-14,0.0,True
 ara-noise,ara,Arabic,noise,name,ليلى حسن,ليلى حسن,نسح ىليل,0.0,True
 ara-noise,ara,Arabic,noise,document_id,975318642,975318642,975318642,0.0,True
-ara-noise,ara,Arabic,noise,date_of_birth,1992-07-16,1992-07-6,1992-07-6,0.1,False
+ara-noise,ara,Arabic,noise,date_of_birth,1992-07-16,1992-07-16,1992-07-16,0.0,True
 ara-noise,ara,Arabic,noise,expiry,2033-02-14,2033-02-14,2033-02-14,0.0,True

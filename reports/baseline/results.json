@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "created_at": "2026-10-03T13:50:19.634694+00:00",
+    "created_at": "2026-10-03T14:23:48.723737+00:00",
     "engine": "Tesseract",
-    "engine_version": "5.5.0.20241111",
+    "engine_version": "5.5.3.20260724",
     "platform": "Windows-10-10.0.19045-SP0",
     "data_license": "CC0-1.0",
     "sample_count": 15
   },
   "overall": {
-    "character_error_rate": 0.014907407407407407,
-    "field_accuracy": 0.85,
+    "character_error_rate": 0.008240740740740741,
+    "field_accuracy": 0.9166666666666666,
     "field_count": 60
   },
   "by_language": {
     "Arabic": {
-      "character_error_rate": 0.025,
-      "field_accuracy": 0.75,
+      "character_error_rate": 0.005,
+      "field_accuracy": 0.95,
       "field_count": 20
     },
     "English": {
@@ -31,13 +31,13 @@
   },
   "by_degradation": {
     "blur": {
-      "character_error_rate": 0.016666666666666666,
-      "field_accuracy": 0.8333333333333334,
+      "character_error_rate": 0.0,
+      "field_accuracy": 1.0,
       "field_count": 12
     },
     "clean": {
-      "character_error_rate": 0.008333333333333333,
-      "field_accuracy": 0.9166666666666666,
+      "character_error_rate": 0.0,
+      "field_accuracy": 1.0,
       "field_count": 12
     },
     "low_light": {
@@ -46,8 +46,8 @@
       "field_count": 12
     },
     "noise": {
-      "character_error_rate": 0.008333333333333333,
-      "field_accuracy": 0.9166666666666666,
+      "character_error_rate": 0.0,
+      "field_accuracy": 1.0,
       "field_count": 12
     },
     "rotation": {
@@ -58,8 +58,8 @@
   },
   "by_field": {
     "date_of_birth": {
-      "character_error_rate": 0.04000000000000001,
-      "field_accuracy": 0.6,
+      "character_error_rate": 0.020000000000000004,
+      "field_accuracy": 0.8,
       "field_count": 15
     },
     "document_id": {
@@ -68,8 +68,8 @@
       "field_count": 15
     },
     "expiry": {
-      "character_error_rate": 0.006666666666666667,
-      "field_accuracy": 0.9333333333333333,
+      "character_error_rate": 0.0,
+      "field_accuracy": 1.0,
       "field_count": 15
     },
     "name": {
@@ -590,10 +590,10 @@
       "degradation": "clean",
       "field": "date_of_birth",
       "expected": "1992-07-16",
-      "predicted": "1992-07-6",
-      "predicted_raw": "1992-07-6",
-      "character_error_rate": 0.1,
-      "exact_match": false
+      "predicted": "1992-07-16",
+      "predicted_raw": "1992-07-16",
+      "character_error_rate": 0.0,
+      "exact_match": true
     },
     {
       "sample_id": "ara-clean",
@@ -638,10 +638,10 @@
       "degradation": "blur",
       "field": "date_of_birth",
       "expected": "1992-07-16",
-      "predicted": "1992-07-6",
-      "predicted_raw": "1992-07-6",
-      "character_error_rate": 0.1,
-      "exact_match": false
+      "predicted": "1992-07-16",
+      "predicted_raw": "1992-07-16",
+      "character_error_rate": 0.0,
+      "exact_match": true
     },
     {
       "sample_id": "ara-blur",
@@ -650,10 +650,10 @@
       "degradation": "blur",
       "field": "expiry",
       "expected": "2033-02-14",
-      "predicted": "2033-02-4",
-      "predicted_raw": "2033-02-4",
-      "character_error_rate": 0.1,
-      "exact_match": false
+      "predicted": "2033-02-14",
+      "predicted_raw": "2033-02-14",
+      "character_error_rate": 0.0,
+      "exact_match": true
     },
     {
       "sample_id": "ara-rotation",
@@ -686,8 +686,8 @@
       "degradation": "rotation",
       "field": "date_of_birth",
       "expected": "1992-07-16",
-      "predicted": "1992-07-6",
-      "predicted_raw": "1992-07-6",
+      "predicted": "4992-07-16",
+      "predicted_raw": "4992-07-16",
       "character_error_rate": 0.1,
       "exact_match": false
     },
@@ -782,10 +782,10 @@
       "degradation": "noise",
       "field": "date_of_birth",
       "expected": "1992-07-16",
-      "predicted": "1992-07-6",
-      "predicted_raw": "1992-07-6",
-      "character_error_rate": 0.1,
-      "exact_match": false
+      "predicted": "1992-07-16",
+      "predicted_raw": "1992-07-16",
+      "character_error_rate": 0.0,
+      "exact_match": true
     },
     {
       "sample_id": "ara-noise",

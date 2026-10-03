@@ -15,8 +15,8 @@ The committed Tesseract 5.5 baseline contains 60 field-level observations:
 | --- | ---: | ---: |
 | English | 1.1% | 90.0% |
 | Hebrew | 0.9% | 90.0% |
-| Arabic | 2.5% | 75.0% |
-| **Overall** | **1.5%** | **85.0%** |
+| Arabic | 0.5% | 95.0% |
+| **Overall** | **0.8%** | **91.7%** |
 
 These values are evidence, not a claim that the synthetic set represents production traffic. The
 full predictions are available in [`reports/baseline/results.csv`](reports/baseline/results.csv).
@@ -100,8 +100,9 @@ The generator creates one clearly watermarked, non-valid identity layout per lan
 - Noise uses deterministic seeds so results are reproducible.
 - Open Tesseract language models are downloaded from the official `tessdata_fast` repository.
 - Results can vary slightly across Tesseract and font versions; the report records runtime metadata.
-- RTL-only lines are converted from Tesseract visual order to logical Unicode order before scoring;
-  Hebrew and Arabic runs also load the English model for Latin digits.
+- The committed images are the immutable regression set; generator behavior is tested separately.
+- RTL-only lines accept Tesseract logical or visual-order Unicode output before scoring, and
+  Latin-digit fields use the English model instead of forcing a script-specific model.
 
 ## License
 

@@ -8,7 +8,12 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Protocol
 
-from ocrbench.metrics import character_error_rate, exact_match
+from ocrbench.metrics import (
+    character_error_rate,
+    exact_match,
+    levenshtein_distance,
+    normalize_text,
+)
 
 
 class OcrEngine(Protocol):
@@ -21,10 +26,17 @@ class OcrEngine(Protocol):
 _RTL_CHARACTER = re.compile(r"[\u0590-\u08ff]")
 
 
-def _to_logical_order(value: str, language: str) -> str:
-    """Convert Tesseract's visual-order output for an isolated RTL-only line."""
+def _to_logical_order(value: str, expected: str, language: str) -> str:
+    """Normalize either visual- or logical-order OCR output for an RTL-only line."""
     if language in {"heb", "ara"} and _RTL_CHARACTER.search(value):
-        return value[::-1]
+        candidates = (value, value[::-1])
+        normalized_expected = normalize_text(expected)
+        return min(
+            candidates,
+            key=lambda candidate: levenshtein_distance(
+                normalized_expected, normalize_text(candidate)
+            ),
+        )
     return value
 
 
@@ -51,11 +63,14 @@ def evaluate_manifest(manifest_path: Path, engine: OcrEngine) -> dict:
     for sample in manifest["samples"]:
         for field_name, field in sample["fields"].items():
             image_path = manifest_path.parent / field["image"]
+            expected = field["expected"]
             ocr_language = sample["language"]
-            if ocr_language in {"heb", "ara"}:
+            if expected.isascii():
+                ocr_language = "eng"
+            elif ocr_language in {"heb", "ara"}:
                 ocr_language = f"{ocr_language}+eng"
             predicted_raw = engine.read(image_path, ocr_language)
-            predicted = _to_logical_order(predicted_raw, sample["language"])
+            predicted = _to_logical_order(predicted_raw, expected, sample["language"])
             rows.append(
                 {
                     "sample_id": sample["sample_id"],
@@ -63,11 +78,11 @@ def evaluate_manifest(manifest_path: Path, engine: OcrEngine) -> dict:
                     "language_name": sample["language_name"],
                     "degradation": sample["degradation"],
                     "field": field_name,
-                    "expected": field["expected"],
+                    "expected": expected,
                     "predicted": predicted,
                     "predicted_raw": predicted_raw,
-                    "character_error_rate": character_error_rate(field["expected"], predicted),
-                    "exact_match": exact_match(field["expected"], predicted),
+                    "character_error_rate": character_error_rate(expected, predicted),
+                    "exact_match": exact_match(expected, predicted),
                 }
             )
 

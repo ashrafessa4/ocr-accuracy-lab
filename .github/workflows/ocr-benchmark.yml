@@ -48,8 +48,6 @@ jobs:
           sudo apt-get install --yes tesseract-ocr tesseract-ocr-eng tesseract-ocr-heb tesseract-ocr-ara fonts-noto-core
       - name: Install package
         run: python -m pip install --upgrade pip && python -m pip install .
-      - name: Generate synthetic dataset
-        run: ocrbench generate
       - name: Evaluate OCR accuracy
         run: ocrbench evaluate --output-dir reports/current
       - name: Check against committed baseline

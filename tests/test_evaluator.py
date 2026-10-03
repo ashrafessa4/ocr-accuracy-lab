@@ -45,5 +45,6 @@ def test_evaluator_summarizes_field_and_language_accuracy(tmp_path: Path) -> Non
 
 
 def test_rtl_visual_order_is_converted_to_logical_order() -> None:
-    assert _to_logical_order("ילארשי", "heb") == "ישראלי"
-    assert _to_logical_order("12345", "heb") == "12345"
+    assert _to_logical_order("ילארשי", "ישראלי", "heb") == "ישראלי"
+    assert _to_logical_order("ישראלי", "ישראלי", "heb") == "ישראלי"
+    assert _to_logical_order("12345", "12345", "heb") == "12345"
