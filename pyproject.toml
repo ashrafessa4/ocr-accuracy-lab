@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ocr-accuracy-lab"
+version = "1.0.0"
+description = "Synthetic multilingual OCR accuracy and regression testing toolkit."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "Portfolio project" }]
+dependencies = [
+  "arabic-reshaper>=3.0,<4",
+  "matplotlib>=3.9,<4",
+  "numpy>=2.0,<3",
+  "Pillow>=11,<13",
+  "pytesseract>=0.3.13,<0.4",
+  "python-bidi>=0.6,<1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<10",
+  "pytest-cov>=5,<8",
+  "ruff>=0.9,<1",
+]
+
+[project.scripts]
+ocrbench = "ocrbench.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ocrbench*"]
+
+[tool.pytest.ini_options]
+addopts = "-q --cov=ocrbench --cov-report=term-missing --cov-fail-under=80"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
